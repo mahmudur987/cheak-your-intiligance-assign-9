@@ -49,13 +49,13 @@ const data = [
 const Statistics = () => {
     return (
 
-        <LineChart className='m-10 p-10 text-3xl'
-            width={1500}
-            height={700}
+        <LineChart className=' p-10 text-3xl'
+            width={1200}
+            height={600}
             data={data}
             margin={{
                 top: 30,
-                right: 30,
+                right: 10,
                 left: 20,
                 bottom: 5,
             }}

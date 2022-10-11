@@ -28,7 +28,7 @@ const Question = ({ questionss, rightAnswer, wrongAnswer }) => {
         <div>
 
             <h1 className='text-2xl font-bold text-start m-3'>{parse(question)}</h1>
-            <div>
+            <div className='border-2 border-black'>
                 <h1 className='font-bold text-start m-2'>Choose the correct answer</h1>
 
                 <div className=' grid grid-cols-1 md:grid-cols-2 gap-3 mx-4'>

@@ -38,7 +38,7 @@ const Quizs = () => {
 
             <div className='flex flex-col-reverse   md:grid  md:grid-cols-6  gap-4 py-7'>
 
-                <div className=' md:col-span-5'>
+                <div className=' md:col-span-5 '>
 
                     {
                         questions.map(question => <Question
