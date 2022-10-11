@@ -1,72 +1,71 @@
-import React, { PureComponent } from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { useLoaderData } from 'react-router-dom';
+import React from 'react';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
+
 
 const data = [
     {
-        name: 'Page A',
-        uv: 4000,
-        pv: 2400,
-        amt: 2400,
+        name: 'start',
+        uv: 0,
+
     },
     {
-        name: 'Page B',
-        uv: 3000,
-        pv: 1398,
-        amt: 2210,
+        name: 'React',
+        uv: 8,
+
     },
     {
-        name: 'Page C',
-        uv: 2000,
-        pv: 9800,
-        amt: 2290,
+        name: 'Java script',
+        uv: 9,
+
     },
     {
-        name: 'Page D',
-        uv: 2780,
-        pv: 3908,
-        amt: 2000,
+        name: 'CSS',
+        uv: 12,
+
     },
     {
-        name: 'Page E',
-        uv: 1890,
-        pv: 4800,
-        amt: 2181,
+        name: 'GIT',
+        uv: 15,
+
     },
     {
-        name: 'Page F',
-        uv: 2390,
-        pv: 3800,
-        amt: 2500,
+        name: 'BOOTSTRAP',
+        uv: 18,
+
+
     },
     {
-        name: 'Page G',
-        uv: 3490,
-        pv: 4300,
-        amt: 2100,
+        name: 'tAILWIND',
+        uv: 23,
+
+
+    },
+    {
+        name: 'OTHER',
+        uv: 34,
+
     },
 ];
 const Statistics = () => {
     return (
 
-        <LineChart className='m-10 p-10'
+        <LineChart className='m-10 p-10 text-3xl'
             width={1500}
             height={700}
             data={data}
             margin={{
-                top: 5,
+                top: 30,
                 right: 30,
                 left: 20,
                 bottom: 5,
             }}
         >
-            <CartesianGrid strokeDasharray="3 3" />
+            <CartesianGrid strokeDasharray="#ccc" />
             <XAxis dataKey="name" />
             <YAxis />
             <Tooltip />
-            <Legend />
-            <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
-            <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+
+            <Line className=' border-4 border-red-600' type="monotone" dataKey="uv" stroke="#82ca9d" />
         </LineChart>
 
     );
