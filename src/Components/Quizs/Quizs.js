@@ -30,7 +30,7 @@ const Quizs = () => {
 
     }
     return (
-        <div className='text-2xl  bg-slate-300 text-center '>
+        <div className='text-2xl bg-pink-100 text-center relative '>
             <h1 className='text-3xl font-serif underline font-bold p-5'>Stage  {id}  </h1>
             <h1 className='font-bold text-red-900 border inline p-4 my-4 border-slate-800'>Quiz for <span className='text-red-500 text-3xl'>{name}</span></h1>
             <hr className='border border-black my-7' />
@@ -48,7 +48,7 @@ const Quizs = () => {
                         ></Question>)
                     }
                 </div>
-                <div className=' flex flex-col items-center justify-center h-64'>
+                <div className=' flex flex-col items-center justify-center h-64 sticky'>
 
                     <div className='border-4 border-black mb-10'>
                         <h1 className='text-2xl font-bold text-green-500 '>right answer</h1>
