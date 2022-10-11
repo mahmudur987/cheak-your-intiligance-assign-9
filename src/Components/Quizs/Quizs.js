@@ -29,11 +29,10 @@ const Quizs = () => {
     if (wrongCart !== 0) {
 
     }
-    console.log(rightCart, wrongCart)
     return (
         <div className='text-2xl  bg-slate-300 text-center '>
             <h1 className='text-3xl font-serif underline font-bold p-5'>Stage  {id}  </h1>
-            <h1 className='font-bold text-red-900 border inline p-4 m-4 border-slate-800'>Quiz for <span className='text-red-500 text-3xl'>{name}</span></h1>
+            <h1 className='font-bold text-red-900 border inline p-4 my-4 border-slate-800'>Quiz for <span className='text-red-500 text-3xl'>{name}</span></h1>
             <hr className='border border-black my-7' />
 
             <div className='flex flex-col-reverse   md:grid  md:grid-cols-6  gap-4 py-7'>

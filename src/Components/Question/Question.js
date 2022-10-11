@@ -27,11 +27,11 @@ const Question = ({ questionss, rightAnswer, wrongAnswer }) => {
     return (
         <div className='mt-12'>
 
-            <h1 className='text-2xl font-bold text-start m-3 flex'>##{parse(question)}</h1>
+            <h1 className='text-2xl font-bold text-start m-3 '>##{parse(question)}</h1>
             <div className='border-4 border-black p-3'>
                 <h1 className='font-bold text-start m-2'>Choose the correct answer</h1>
 
-                <div className=' grid grid-cols-1 md:grid-cols-2 gap-3 mx-4'>
+                <div className=' grid grid-cols-1 md:grid-cols-2 gap-3'>
                     {
                         options.map((option, idx) => <Option key={idx} option={option} answer={answer}></Option>)
                     }
