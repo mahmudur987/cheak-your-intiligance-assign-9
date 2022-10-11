@@ -14,7 +14,7 @@ const Header = () => {
             </div>
 
 
-            <div className=' grid  grid-cols-2 md:flex md:justify-around  '>
+            <div className=' grid  grid-cols-1 md:flex md:justify-around  '>
                 {
                     topics.map(topic => <QuizTopics key={topic.id} topic={topic}></QuizTopics>)
                 }
