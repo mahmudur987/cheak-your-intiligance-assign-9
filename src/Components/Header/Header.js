@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import QuizTopics from '../Statistics/QuizTopics/QuizTopics';
+import QuizTopics from '../QuizTopics/QuizTopics';
+
 
 const Header = () => {
     const topics = useLoaderData().data;
@@ -13,7 +14,7 @@ const Header = () => {
             </div>
 
 
-            <div className='flex justify-around'>
+            <div className=' grid  grid-cols-2 md:flex md:justify-around  '>
                 {
                     topics.map(topic => <QuizTopics key={topic.id} topic={topic}></QuizTopics>)
                 }

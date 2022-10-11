@@ -4,7 +4,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './Components/Main/Main';
 import Header from './Components/Header/Header';
 import Statistics from './Components/Statistics/Statistics';
-import Blog from './Components/Statistics/Blog/Blog';
+import Blog from './Components/Blog/Blog';
+import Quizs from './Components/Quizs/Quizs';
 
 function App() {
 
@@ -20,11 +21,23 @@ function App() {
         },
         {
           path: '/statistics',
+          loader: async () => {
+            return fetch(`https://openapi.programming-hero.com/api/quiz`)
+
+          },
           element: <Statistics></Statistics>
         },
         {
           path: '/blog',
           element: <Blog></Blog>
+        },
+        {
+          path: '/quizs/:quizsId',
+          loader: async ({ params }) => {
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizsId}`)
+
+          },
+          element: <Quizs></Quizs>
         },
         {
           path: '/*',
