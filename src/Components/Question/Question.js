@@ -26,7 +26,7 @@ const Question = ({ questionss, rightAnswer, wrongAnswer }) => {
 
         }
     }
-    console.log(correctAnswer)
+    // console.log(correctAnswer)
     return (
         <div className='mt-12 border-4 border-black relative'>
 

@@ -20,12 +20,12 @@ const data = [
     },
     {
         name: 'CSS',
-        uv: 12,
+        uv: 8,
 
     },
     {
         name: 'GIT',
-        uv: 15,
+        uv: 11,
 
     },
     {
